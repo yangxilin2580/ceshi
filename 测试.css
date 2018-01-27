@@ -2,7 +2,6 @@
 li{list-style:none;}
 a{	
 	text-decoration:none;
-	
 }
 .banxin{
 	width:1000px;
@@ -17,10 +16,58 @@ a{
 	font-size:12px;
 	float:right;
 	line-height:30px;
-	margin-left:20px;
+	margin-left:10px;
+	width:75px;
+	height:30px;
+	display:inline-block;
+}
+.top li:hover a{
+	color:#dd4012;
 }
 .top a{
 		color:#fff;
+}
+.daohang{
+	position:relative;
+}
+.liebiao1{
+	background-color:#333;
+	position:absolute;
+	display:none;
+	width:200px;
+	height:100px;
+	background-color:#fff;
+	left:-120px;
+}
+.liebiao1 .one{
+	color:#666;
+	width:15px;
+	height:10px;
+	line-height:70px;
+}
+/*.liebiao1 .two{
+	color:blue;
+	width:20px;
+	height:10px;
+}*/
+.liebiao1 img{
+	width:50px;
+	height:50px;
+	background-color: #f6f6f6;
+	margin:10px;
+	float:left;
+}
+.daohang:hover .liebiao1{
+	display:block;
+	background-color:#f6f6f6;
+}
+.daohang:hover .liebiao1 a{
+	color:#000;
+	font-size:14px;
+	background-color:#f6f6f6;
+}
+.top a:hover{
+	color:#000;
 }
 .beijing{
 	background-color:#e3e3e3;
@@ -33,18 +80,23 @@ a{
 .beijing .first a{
 	color:#dd4012;
 }
-.beijing li{
+.beijing li a:hover{
+	color:#dd4012;
+}
+.beijing li a{
 	float:right;
 	margin-left:40px;
 	padding-top:25px;
 	font-size:16px;
 	color:#333;
 }
-
+.top-right li{
+	
+}
 .second-left{
 	float:left;
 	width:175px;
-	height:277px;
+	height:;
 	margin-top:20px;
 	border:1px solid #ccc;
 	border-radius: 2px;
@@ -53,22 +105,43 @@ a{
 	width:169px;
 	height:30px;
 	line-height:30px;
-}
-.second-left img{
-	margin-right:10px;
-	padding-top:8px;
+	/*box-sizing:border-box;	*/
+} 
+.second-left li i{
+	height:25px;
+	width:25px;
+	display:inline-block;
 	float:left;
-	margin-left:5px;
+	background-image:url(images/yinghangka.jpg);
+	background-repeat:no-repeat;
 }
 .second-left li a{
 	font-size:14px;
 	color:#333;
+	padding-left:5px;
+	margin-left:5px;
 }
 .second-left .yangshi{
 	background-color:#e3e3e3;
 	border:1px solid #ccc;
 	font-weight: bold;
-	padding-left:5px;
+	width:175px;
+	height:30px;
+}
+.lbys{
+	position:relative;
+}
+.lianbiao2{
+	position:absolute;
+	top:30px;
+	height:0;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	width:175px;
+	transition:all .5s;
+}
+.lbys:hover .lianbiao2{
+	height:120px;
 }
 .second-left .span1{
 	color:#bbb;
@@ -87,7 +160,6 @@ a{
 	border:2px solid #e3e3e3;
 	margin-top:20px;
 	margin-left:30px;
-
 }
 .right-top{
 	background-color:#f2f6fa;
@@ -121,8 +193,7 @@ a{
 	font-size:14px;
 }
 #btn{
-	margin-top:50px;
-	margin-left:115px;
+	margin-left:185px;
 	background-color:#f09512;
 	width:60px;
 	height:30px;
@@ -146,3 +217,52 @@ a{
 }
 .right-zhongjian li:hover .liebiao{
 	display:block;
+}
+table{
+	width:100%;
+}
+.td1{
+	text-align: right;
+	width:180px;
+}
+.td2{
+	height:35px;
+	position:relative;
+}
+.td2 .yh{
+	position:absolute;
+	width:300px;
+	height:150px;
+	z-index: 1;
+	border:2px solid #f2f6fa;
+	background-color:#fff;
+}
+.yh span{
+	width:126px;
+	height:35px;
+	display:inline-block;
+	
+}
+#zgyh{
+	background-image:url(images/bankgroup.jpg);
+	background-position:0px -146px;
+}
+#zgyh i{
+	display: none;
+}
+#gsyh{
+	background-image:url(images/bankgroup.jpg);
+	background-position:0px 0px;
+}
+#gsyh i{
+	display:none;
+}
+#tanchukuang{
+	width:172px;
+	height:20px;
+	border:1px solid #bbb;
+	background-color:#fff;
+	position:absolute;
+	top:25px;
+	left:0;
+}

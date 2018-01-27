@@ -9,14 +9,23 @@
 <div class="quanbu">
 	<div class="top">
 		<div class="banxin">
-			<ul>
-				<li><a href="#">服务大厅</a><span>|</span></li>
-					<li><a href="#">安全中心</a><span>|</span></li>
-					<li><a href="#">我的支付宝</a><span>|</span></li>
-					<li><a href="#">退出</a><span>|</span></li>
-					<li class="daohang"><a href="#">您好，王大伟</a><span></span></li>
-				</li>
-			</ul>
+			<div class="top-right">
+				<ul>
+					<li><a href="#">服务大厅</a></li>
+					<li><a href="#">安全中心</a></li>
+					<li><a href="#">我的支付宝</a></li>
+					<li><a href="#">退出</a></li>
+					<li class="daohang"><a href="#">您好，杨喜林</a>
+						<div class="liebiao1">
+							<img src="images/tupian.jpg" alt="">
+							<a  class="one" href="#">账户设置</a>
+            				<a  class="one"href="#">交易记录</a>
+           					<!-- <a class="two"href="#">账户余额</a>
+            				<a class="two"href="#">显示余额</a> -->
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 		<div class="beijing">
@@ -24,9 +33,9 @@
 				<img src="images/logo.png" alt="">
 				<ul>
 					<li class="first"><a href="">应用中心</a></li>
-					<li>会员保障</li>
-					<li>交易记录</li>
-					<li>我的支付宝</li>
+					<li><a href="">会员保障</a></li>
+					<li><a href="">交易记录</a></li>
+					<li><a href="">我的支付宝</a></li>
 				</ul>
 			</div>
 		</div>
@@ -35,19 +44,21 @@
 				<ul>
 					<li class="yangshi"><a href="">我的应用(10)</a></li>
 					<li class="yangshi"><a href="">转账收款(5)</a></li>
-					<img src="images/zhuanzhang.png" alt="">
-					<li><a href="">转账首页</a></li>
-					<img src="images/zhuanzhang.png" alt="">
-					<li class="yangshi"><a href="">转账到银行卡</a><span class="span1">已添加</span></li>
-					<img src="images/zhuanzhang.png" alt="">
-					<li><a href="">转账到支付宝</a><span class="span1">已添加</span></li>
-					<img src="images/zhuanzhang.png" alt="">
-					<li><a href="">我要收款</a><span class="span2">+添加</span></li>
-					<img src="images/zhuanzhang.png" alt="">
-					<li><a href="">上银汇款</a><span class="span2">+添加</span></li>
-					<img src="images/zhuanzhang.png" alt="">
-					<li><a href="">红包</a><span class="span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+添加</span></li>
-					<li class="yangshi"><a href="">更多应用></a></li>
+				
+					<li class="yangshi"><i></i><a href="">转账首页</a></li>
+				
+					<li class="yangshi lbys"><i></i><a href="">转账到银行卡</a>	<span class="span1">已添加</span>
+						<ul class="lianbiao2">
+							<li><i></i><a href="">转账到支付宝</a><span class="span1">已添加</span></li>
+							
+							<li><i></i><a href="">我要收款</a><span class="span2">+添加</span></li>
+							
+							<li><i></i><a href="">上银汇款</a><span class="span2">+添加</span></li>
+							
+							<li><i></i><a href="">红包</a><span class="span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+添加</span></li>
+						</ul>
+					</li>
+					<!-- <li class="yangshi"><a href="">更多应用></a></li>	 --> 
 				</ul>
 			</div>
 		<div class="second-right">
@@ -60,50 +71,72 @@
 					<li class="last">转账到银行卡记录</li>
 				</ul>
 			</div>
-		<div class="right-zhongjian">
-			<p>收款方：&nbsp;&nbsp;
-					<select name="" id="select">
-						<option value="">选择/输入银行</option>
-						<option value="">中国工商银行</option>
-						<option value="">中国建设银行</option>
-						<option value="">中国人民银行</option>
-						<option value="">中国银行</option>
-					</select>
-				<!-- <input id="username" type="text" value="" placeholder="选择/输入银行"> -->
-				<!-- <div class="liebiao">
-							<li><a href="#"><img src="images/" alt="">热门银行</a></li>
-            				<li><a href="#"></a></li>
-           					<li><a href="#"></a></li>
-            				<li><a href="#"></a></li>
-            				<li><a href="#"></a></li>
-            				<li><a href="#"></a></li>
-						</div> -->
-			 </p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  id="kahao"type="text" value="" placeholder="储蓄卡号">
-				</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  id="xingming"type="text" name="" placeholder="开户姓名">
-				</p>
-			<p>付款金额：<input  type="text" value="" placeholder="输入金额"> 元 </p>
-			<p> 到账时间： <input type="radio" name="sex" checked id="male">2小时内到账</p> 
-			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="female">次日24小时点前到账</p>
-			<p>*服务费：&nbsp;&nbsp;50.00(付款总额：50050.00元)</p>
-			<p>付款说明：<input  type="text" value="" placeholder="可选20字以内"></p>
-			<button id="btn">下一步</button>
+		<table>
+			<tbody class="banxin">
+				<tr>
+					<td class="td1">收款方：</td>
+					<td class="td2"><input id="shoukuanfang" type="text" value="" placeholder="选择/输入银行" list="listbank"><span>已存银行卡</span>
+						<datalist id="listbank">
+							<option value="中国工商银行"></option>
+							<option value="中国招商银行"></option>
+							<option value="中国浦发银行"></option>
+							<option value="中国建设银行"></option>
+							<option value="中国农业银行"></option>
+							<option value="中国银行"></option>
+							<option value="中国邮政储蓄"></option>
+						</datalist>
+						<div class="yh" style="display:none;">
+							<span id="zgyh"><i>中国银行</i></span>
+							<span id="gsyh"><i>中国工商银行</i></span>
+							<span><i></i></span>
+							<span><i></i></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td1"></td>
+					<td class="td2"> <input id="kahao" type="text" value="" placeholder="储蓄卡号"><span id="kahaosp" style="color:#f00;"></span><span id="tanchukuang" style="display:none;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td class="td1"></td>
+					<td class="td2"><input id="username" type="text" value="" placeholder="开户人姓名"><span></span></td>
+				</tr>
+				<tr>
+					<td class="td1">付款金额：</td>
+					<td class="td2"><input  id="fukuan" type="text" placeholder="输入金额"><span id="fkerror" style="color:#f00; font-size:12px; display:none">单次金额不得大于50000</span></td>
+				</tr>
+				<tr>
+					<td class="td1"></td>
+					<td><span>您还可免费转账<span id="mianfei">50000</span>元，超出部分按0.2%计算</span></td>
+				</tr>
+				<tr>
+					<td class="td1">到账时间：</td>
+					<td class="td2"><input  id="shijian"type="radio" name="sex" checked id=""><span>2小时内到账</span></td>
+				</tr>
+				<tr>
+					<td class="td1"></td>
+					<td class="td2"><input type="radio" name="sex" id=""><span>次日24点前到账</span></td>
+				</tr>
+				<tr>
+					<td class="td1">*服务费：</td>
+					<td><span id="fuwufei">0</span>(付款总额：<span id="zonge">0</span>元)</td>
+				</tr>
+				<tr>
+					<td class="td1">付款说明：</td>
+					<td class="td2"><input type="text" value="" placeholder="可选20字以内"></td>
+				</tr>			
+			</tbody>
+		</table> 
+				<button id="btn">下一步</button>
 		</div> 
 		</div>
 	</div>
 	<div class="fixed">
-		<img src="images/jianyi.png" alt="">
+		<!-- <img src="images/jianyi.png" alt=""> -->
 		<img src="images/fixed.png" alt="">
 	</div>
 </div>
-	<script>
-		var button=document.getElementById('btn')
-		var username=document.getElementById('username')
-		var kahao=document.getElementById('kahao')
-		var selects=document.getElementsByTagName('select')[0]
-		
-
-	</script>
+	<script src="测试.js"></script>
 </body>
 </html>
